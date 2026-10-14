@@ -1,0 +1,33 @@
+{
+  "appId": "com.enfintoi.app",
+  "appName": "EnfinToi",
+  "webDir": "www",
+  "backgroundColor": "#FBF7FA",
+  "server": {
+    "url": "https://enfintoi.com/ios/",
+    "errorPath": "offline.html",
+    "allowNavigation": ["enfintoi.com", "*.enfintoi.com", "hlkkidttbkcemzrgyija.supabase.co"]
+  },
+  "ios": {
+    "contentInset": "never",
+    "scheme": "EnfinToi",
+    "limitsNavigationsToAppBoundDomains": false,
+    "appendUserAgent": "EnfinToiApp/1.0"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "launchAutoHide": true,
+      "backgroundColor": "#FBF7FA",
+      "showSpinner": false
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    },
+    "StatusBar": {
+      "style": "LIGHT",
+      "backgroundColor": "#FBF7FA",
+      "overlaysWebView": false
+    }
+  }
+}
