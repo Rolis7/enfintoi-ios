@@ -32,8 +32,12 @@ workflows:
         script: |
           rm -rf ios
           npx cap add ios
-      - name: Icônes et écran de démarrage
-        script: npm run ios:assets
+      - name: Icônes et écran de démarrage (logo officiel)
+        script: |
+          curl -fsSL https://enfintoi.com/icons/icon-512.png -o /tmp/enfintoi-logo.png
+          python3 -m pip install --quiet pillow || pip3 install --quiet pillow
+          python3 scripts/logo.py /tmp/enfintoi-logo.png
+          npm run ios:assets
       - name: Configurer le projet (push, photos, position, Info.plist)
         script: bash scripts/configure-ios.sh
       - name: Synchroniser Capacitor

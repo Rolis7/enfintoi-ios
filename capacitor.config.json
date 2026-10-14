@@ -18,7 +18,7 @@
     "SplashScreen": {
       "launchShowDuration": 1500,
       "launchAutoHide": true,
-      "backgroundColor": "#FBF7FA",
+      "backgroundColor": "#FFFFFF",
       "showSpinner": false
     },
     "PushNotifications": {

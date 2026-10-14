@@ -4,7 +4,7 @@
   "private": true,
   "description": "Application iOS EnfinToi (enfintoi.com) – Capacitor",
   "scripts": {
-    "ios:assets": "npx @capacitor/assets generate --ios --iconBackgroundColor '#F72A7B' --splashBackgroundColor '#FBF7FA' --splashBackgroundColorDark '#FBF7FA'"
+    "ios:assets": "npx @capacitor/assets generate --ios --iconBackgroundColor '#FFFFFF' --splashBackgroundColor '#FFFFFF' --splashBackgroundColorDark '#FFFFFF'"
   },
   "dependencies": {
     "@capacitor/app": "^7.0.0",
